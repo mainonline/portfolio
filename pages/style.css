@@ -1,0 +1,2815 @@
+
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 1.5),
+    -3px -3px 5px -1px rgba(43, 42, 42, 0.7);
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 2px 2px 3px -1px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 3px -1px rgba#1b1b1b81,
+    -0.5px -0.5px 0px #1b1b1b81,
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 6px 5px -5px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-weight: 600;
+  color: #666;
+}
+
+.html-circle-skill {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+.html-circle-skill circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 75;
+  }
+}
+
+
+.html-circle-skill.css circle {
+  stroke: url(#GradientColorCss);
+  animation: animCss 2s linear forwards;
+  animation-delay: .2s;
+}
+
+@keyframes animCss {
+  100% {
+    stroke-dashoffset: 120;
+  }
+}
+
+.html-circle-skill.js circle {
+  stroke: url(#GradientColorJs);
+  animation: animJs 2s linear forwards;
+  animation-delay: .4s;
+}
+
+@keyframes animJs {
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+
+.html-circle-skill.react circle {
+  stroke: url(#GradientColorReact);
+  animation: animReact 2s linear forwards;
+  animation-delay: .6s;
+}
+
+@keyframes animReact {
+  100% {
+    stroke-dashoffset: 270;
+  }
+}
+
+.html-circle-skill.java circle {
+  stroke: url(#GradientColorJava);
+  animation: animJava 2s linear forwards;
+  animation-delay: .8s;
+}
+
+@keyframes animJava {
+  100% {
+    stroke-dashoffset: 230;
+  }
+}
+
+.html-circle-skill.cpp circle {
+  stroke: url(#GradientColorCpp);
+  animation: animCpp 2s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animCpp {
+  100% {
+    stroke-dashoffset: 260;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* badics start */
+
+
+
+@media (max-width: 1072px) {
+    .container {
+        margin: -300px 0 0 -220px;
+        width: 440px;
+    }
+    .container.opened {
+        transform: translateX(-204px);
+        -webkit-transform: translateX(-204px);
+        -moz-transform: translateX(-204px);
+        -o-transform: translateX(-204px);
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        margin: 0 auto;
+        position: relative;
+        top: 83px;
+        left: 0;
+        width: auto;
+        max-width: 540px;
+        height: auto;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+    }
+    .container.opened {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        margin: 0 5px;
+        top: 78px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+.background {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(120, 204, 109, 0.4);
+}
+
+
+/*
+	3. Columns
+*/
+
+.row {
+    margin: 0 -20px;
+    position: relative;
+    font-size: 0;
+}
+
+.row .col {
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.row .col .col {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .row .col.col-d-12 {
+        width: 99.996%;
+    }
+    .row .col.col-d-11 {
+        width: 91.663%;
+    }
+    .row .col.col-d-10 {
+        width: 83.333%;
+    }
+    .row .col.col-d-9 {
+        width: 74.997%;
+    }
+    .row .col.col-d-8 {
+        width: 66.664%;
+    }
+    .row .col.col-d-7 {
+        width: 58.331%;
+    }
+    .row .col.col-d-6 {
+        width: 49.998%;
+    }
+    .row .col.col-d-5 {
+        width: 41.665%;
+    }
+    .row .col.col-d-4 {
+        width: 33.332%;
+    }
+    .row .col.col-d-3 {
+        width: 24.999%;
+    }
+    .row .col.col-d-2 {
+        width: 16.666%;
+    }
+    .row .col.col-d-1 {
+        width: 8.333%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .row .col.col-t-12 {
+        width: 99.996%;
+    }
+    .row .col.col-t-11 {
+        width: 91.663%;
+    }
+    .row .col.col-t-10 {
+        width: 83.333%;
+    }
+    .row .col.col-t-9 {
+        width: 74.997%;
+    }
+    .row .col.col-t-8 {
+        width: 66.664%;
+    }
+    .row .col.col-t-7 {
+        width: 58.331%;
+    }
+    .row .col.col-t-6 {
+        width: 49.998%;
+    }
+    .row .col.col-t-5 {
+        width: 41.665%;
+    }
+    .row .col.col-t-4 {
+        width: 33.332%;
+    }
+    .row .col.col-t-3 {
+        width: 24.999%;
+    }
+    .row .col.col-t-2 {
+        width: 16.666%;
+    }
+    .row .col.col-t-1 {
+        width: 8.333%;
+    }
+}
+
+@media (max-width: 560px) {
+    .row .col.col-m-12 {
+        width: 99.996%;
+    }
+    .row .col.col-m-11 {
+        width: 91.663%;
+    }
+    .row .col.col-m-10 {
+        width: 83.333%;
+    }
+    .row .col.col-m-9 {
+        width: 74.997%;
+    }
+    .row .col.col-m-8 {
+        width: 66.664%;
+    }
+    .row .col.col-m-7 {
+        width: 58.331%;
+    }
+    .row .col.col-m-6 {
+        width: 49.998%;
+    }
+    .row .col.col-m-5 {
+        width: 41.665%;
+    }
+    .row .col.col-m-4 {
+        width: 33.332%;
+    }
+    .row .col.col-m-3 {
+        width: 24.999%;
+    }
+    .row .col.col-m-2 {
+        width: 16.666%;
+    }
+    .row .col.col-m-1 {
+        width: 8.333%;
+    }
+}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* .border-line-v:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+} */
+
+.border-line-v:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, #eb3349 0%, #eb3349 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, #eb3349 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, #eb3349 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+.border-line-h:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, #f45c43 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, #f45c43 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, #f45c43 0%, rgba(255, 255, 255, 0) 70%);
+}
+/* .border-line-h:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+} */
+
+
+
+
+/*
+	5. Typography
+*/
+
+
+strong {
+    font-weight: 500;
+}
+
+
+/* links, buttons */
+
+.lnks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+
+.lnks:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.lnk,
+.button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 12px;
+    color: #171717;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+}
+
+.lnk:before,
+.button:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.lnk .ion,
+.button .ion,
+.lnk .arrow,
+.button .arrow {
+    margin: 0 0 0 8px;
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.lnk .arrow,
+.button .arrow {
+    top: -1px;
+    width: 14px;
+    height: 2px;
+}
+
+.lnk .arrow:before,
+.button .arrow:before,
+.lnk .arrow:after,
+.button .arrow:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #171717;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.lnk .arrow:after,
+.button .arrow:after {
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 3px;
+    width: 8px;
+    height: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.lnk .text,
+.button .text {
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.lnk:last-child:before,
+.button:last-child:before {
+    display: none;
+}
+
+.lnk:hover,
+.button:hover {
+    color: #f48882;
+    /* color: #e0485d; */
+    /* color: #78cc6d; */
+}
+
+.lnk:hover .ion,
+.button:hover .ion {
+    color: #f48882;
+    /* color: #e0485d; */
+    /* color: #78cc6d; */
+}
+
+.lnk:hover .arrow:before,
+.button:hover .arrow:before,
+.lnk:hover .arrow:after,
+.button:hover .arrow:after {
+    /* background: #78cc6d; */
+    /* background: #e0485d; */
+    background: #f48882;
+}
+
+.button {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+
+
+
+/* lists */
+
+ol,
+ul {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-bottom: 0px;
+}
+
+li {
+    margin-bottom: 0px;
+}
+
+
+/* code */
+
+code {
+    background: #d8dbe2;
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+
+/* tables */
+
+table {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #d8dbe2;
+    color: #171717;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+td {
+    border: none;
+    border-bottom: 1px solid #d8dbe2;
+    padding: 12px 15px;
+    text-align: left;
+    color: #626262;
+}
+
+
+/* blockquote */
+
+blockquote {
+    font-family: 'Poppins';
+}
+
+
+/*
+	6. Forms
+*/
+
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: 'Poppins';
+    font-size: 13px;
+    width: 100%;
+    height: 60px;
+    color: #171717;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #d8dbe2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    outline: 0;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -khtml-border-radius: 0px;
+}
+
+/* input:focus,
+textarea:focus,
+button:focus {
+    color: #171717;
+    border-bottom: 1px solid #f48882;
+} */
+
+/* textarea {
+    padding: 15px 0;
+    height: 80px;
+}
+
+button {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    color: #171717;
+    border-bottom: 1px solid #d8dbe2;
+    text-align: left;
+    cursor: pointer;
+} */
+
+/* button:hover {
+    border-bottom: 1px solid #f48882;
+} */
+
+label,
+legend {
+    display: block;
+    padding-bottom: 10px;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+fieldset {
+    border-width: 0;
+    padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+}
+
+::-webkit-input-placeholder {
+    color: #999999;
+}
+
+:-moz-placeholder {
+    color: #999999;
+}
+
+::-moz-placeholder {
+    color: #999999;
+}
+
+:-ms-input-placeholder {
+    color: #999999;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #171717;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: #171717;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: #171717;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: #171717;
+}
+
+input.error,
+textarea.error {
+    border-bottom: 1px solid #ff0000 !important;
+}
+
+label.error {
+    display: none!important;
+}
+
+input.error::-moz-placeholder,
+textarea.error::-moz-placeholder {
+    color: #ff0000;
+}
+
+input.error:-moz-placeholder,
+textarea.error:-moz-placeholder {
+    color: #ff0000;
+}
+
+input.error:-ms-input-placeholder,
+textarea.error:-ms-input-placeholder {
+    color: #ff0000;
+}
+
+input.error::-webkit-input-placeholder,
+textarea.error::-webkit-input-placeholder {
+    color: #ff0000;
+}
+
+
+/*
+	7. Alignments
+*/
+
+.align-center {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-none {
+    float: none !important;
+}
+
+
+/* width */
+
+.full-width {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.full-max-width {
+    max-width: 100% !important;
+    width: auto !important;
+}
+
+
+/* vertical align */
+
+.centrize {
+    display: table !important;
+    table-layout: fixed !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.vertical-center {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.vertical-top {
+    display: table-cell !important;
+    vertical-align: top !important;
+}
+
+.vertical-bottom {
+    display: table-cell !important;
+    vertical-align: bottom !important;
+}
+
+
+/* text formating */
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
+
+.text-italic {
+    font-style: italic !important;
+}
+
+
+/* clearing */
+
+.clear {
+    clear: both;
+}
+
+
+/*
+	8. Animations
+*/
+
+
+/* flip cards */
+
+.FlipIn {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-duration: 0.7s !important;
+    animation-duration: 0.7s !important;
+    -webkit-animation-name: FlipIn;
+    animation-name: FlipIn;
+}
+
+@-webkit-keyframes FlipIn {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes FlipIn {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.FlipOut {
+    -webkit-animation-duration: 0.7s !important;
+    animation-duration: 0.7s !important;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: FlipOut;
+    animation-name: FlipOut;
+}
+
+@-webkit-keyframes FlipOut {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes FlipOut {
+    from {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+
+/* preloader */
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+	5. Resume
+*/
+
+.resume-title,
+.skill-title {
+    padding: 0 0 20px 0;
+    position: relative;
+}
+
+.resume-title:after,
+.skill-title:after {
+    left: -20px;
+}
+
+.resume-title .icon,
+.skill-title .icon {
+    position: relative;
+    top: -10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    /* color: #88CCCA; */
+    color: #388087;
+    /* background: #ffffff; */
+}
+
+.resume-title .icon .ion,
+.skill-title .icon .ion,
+.resume-title .icon .fab,
+.skill-title .icon .fab,
+.resume-title .icon .fas,
+.skill-title .icon .fas {
+    display: block;
+    line-height: 40px;
+}
+
+.resume-title .name,
+.skill-title .name {
+    margin: 0 0 0 40px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/* 5.1 Resume */
+
+.resume-items .resume-item {
+    position: relative;
+    padding: 20px 0 20px 0;
+}
+
+.resume-items .resume-item:after {
+    left: -20px;
+}
+
+.resume-items .resume-item.active .date {
+    /* color: #81e6d9; */
+    color: #f48882;
+}
+
+.resume-items .resume-item.active .date:before {
+    background: #f48882;
+}
+
+.resume-items .resume-item .date {
+    margin: 0 0 10px 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 18px;
+    color: #d8dbe2;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+.resume-items .resume-item .date:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    background: #d8dbe2;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -khtml-border-radius: 9px;
+}
+
+.resume-items .resume-item .name {
+    margin: 0;
+    font-size: 13px;
+    color: #e9e9e9;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.resume-items .resume-item .company {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.resume-items .resume-item p {
+    margin: 0;
+}
+
+
+
+
+/* 5.2 Skills */
+
+.skills-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list ul li {
+    position: relative;
+    padding: 20px 0;
+}
+
+.skills-list ul li:after {
+    left: -20px;
+}
+
+.skills-list ul li .name {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #626262;
+}
+
+.skills-list ul li .progress {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #d8dbe2;
+}
+
+.skills-list ul li .progress .percentage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    /* background: #78cc6d; */
+    /* background: #e0485d; */
+    background: #f48882;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+
+.percentage.pro90 {
+  width: 90% !important;
+}
+.percentage.pro65 {
+  width: 65% !important;
+}
+.percentage.pro75 {
+  width: 75% !important;
+}
+.percentage.pro85 {
+  width: 85% !important;
+}
+
+.percentage.pro60 {
+  width: 60% !important;
+}
+.percentage.pro70 {
+  width: 70% !important;
+}
+.percentage.pro30 {
+  width: 30% !important;
+}
+
+
+/* badics end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skills */
+
+.skills-list ul {
+    clear: both;
+}
+
+.skills-list.circles ul {
+    margin: 0 -20px;
+    text-align: center;
+}
+
+.skills-list.list ul {
+    padding-top: 10px;
+}
+
+.skills-list.circles ul li {
+    padding-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+}
+
+.skills-list.list ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content.skills .row .col.col-d-12 .skills-list.circles ul li,
+.content.skills .row .col.col-t-12 .skills-list.circles ul li {
+    width: 24%;
+}
+
+.skills-list.circles ul li .name {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.skills-list.list ul li .name {
+    padding-left: 20px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+/* .skills-list.list ul li .name:before {
+    content: "\f121";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    font-family: "Ionicons";
+    color: #78cc6d;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+.skills-list.dotted ul li .progress {
+    background: transparent!important;
+}
+
+.skills-list.list ul li .progress {
+    display: none;
+}
+
+.skills-list.dotted ul li .progress .percentage {
+    position: relative;
+    overflow: hidden;
+    top: -2px;
+    height: 14px;
+    background: transparent!important;
+    z-index: 2;
+}
+
+.skills-list.dotted ul li .progress .dg,
+.skills-list.dotted ul li .progress .da {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 14px;
+}
+
+.skills-list.dotted ul li .progress .da {
+    top: 0;
+}
+
+.skills-list.dotted ul li .progress .dg span,
+.skills-list.dotted ul li .progress .da span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #eee;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+}
+
+.skills-list.dotted ul li .progress .da span {
+    /* background: #78cc6d; */
+    /* background: #e0485d; */
+    background: #f48882;
+}
+
+
+
+.skills-list.circles .progress.p51 .slice,
+.skills-list.circles .progress.p52 .slice,
+.skills-list.circles .progress.p53 .slice,
+.skills-list.circles .progress.p54 .slice,
+.skills-list.circles .progress.p55 .slice,
+.skills-list.circles .progress.p56 .slice,
+.skills-list.circles .progress.p57 .slice,
+.skills-list.circles .progress.p58 .slice,
+.skills-list.circles .progress.p59 .slice,
+.skills-list.circles .progress.p60 .slice,
+.skills-list.circles .progress.p61 .slice,
+.skills-list.circles .progress.p62 .slice,
+.skills-list.circles .progress.p63 .slice,
+.skills-list.circles .progress.p64 .slice,
+.skills-list.circles .progress.p65 .slice,
+.skills-list.circles .progress.p66 .slice,
+.skills-list.circles .progress.p67 .slice,
+.skills-list.circles .progress.p68 .slice,
+.skills-list.circles .progress.p69 .slice,
+.skills-list.circles .progress.p70 .slice,
+.skills-list.circles .progress.p71 .slice,
+.skills-list.circles .progress.p72 .slice,
+.skills-list.circles .progress.p73 .slice,
+.skills-list.circles .progress.p74 .slice,
+.skills-list.circles .progress.p75 .slice,
+.skills-list.circles .progress.p76 .slice,
+.skills-list.circles .progress.p77 .slice,
+.skills-list.circles .progress.p78 .slice,
+.skills-list.circles .progress.p79 .slice,
+.skills-list.circles .progress.p80 .slice,
+.skills-list.circles .progress.p81 .slice,
+.skills-list.circles .progress.p82 .slice,
+.skills-list.circles .progress.p83 .slice,
+.skills-list.circles .progress.p84 .slice,
+.skills-list.circles .progress.p85 .slice,
+.skills-list.circles .progress.p86 .slice,
+.skills-list.circles .progress.p87 .slice,
+.skills-list.circles .progress.p88 .slice,
+.skills-list.circles .progress.p89 .slice,
+.skills-list.circles .progress.p90 .slice,
+.skills-list.circles .progress.p91 .slice,
+.skills-list.circles .progress.p92 .slice,
+.skills-list.circles .progress.p93 .slice,
+.skills-list.circles .progress.p94 .slice,
+.skills-list.circles .progress.p95 .slice,
+.skills-list.circles .progress.p96 .slice,
+.skills-list.circles .progress.p97 .slice,
+.skills-list.circles .progress.p98 .slice,
+.skills-list.circles .progress.p99 .slice,
+.skills-list.circles .progress.p100 .slice {
+    clip: rect(auto, auto, auto, auto);
+}
+
+.skills-list.circles .progress .bar,
+.skills-list.circles .progress.p51 .fill,
+.skills-list.circles .progress.p52 .fill,
+.skills-list.circles .progress.p53 .fill,
+.skills-list.circles .progress.p54 .fill,
+.skills-list.circles .progress.p55 .fill,
+.skills-list.circles .progress.p56 .fill,
+.skills-list.circles .progress.p57 .fill,
+.skills-list.circles .progress.p58 .fill,
+.skills-list.circles .progress.p59 .fill,
+.skills-list.circles .progress.p60 .fill,
+.skills-list.circles .progress.p61 .fill,
+.skills-list.circles .progress.p62 .fill,
+.skills-list.circles .progress.p63 .fill,
+.skills-list.circles .progress.p64 .fill,
+.skills-list.circles .progress.p65 .fill,
+.skills-list.circles .progress.p66 .fill,
+.skills-list.circles .progress.p67 .fill,
+.skills-list.circles .progress.p68 .fill,
+.skills-list.circles .progress.p69 .fill,
+.skills-list.circles .progress.p70 .fill,
+.skills-list.circles .progress.p71 .fill,
+.skills-list.circles .progress.p72 .fill,
+.skills-list.circles .progress.p73 .fill,
+.skills-list.circles .progress.p74 .fill,
+.skills-list.circles .progress.p75 .fill,
+.skills-list.circles .progress.p76 .fill,
+.skills-list.circles .progress.p77 .fill,
+.skills-list.circles .progress.p78 .fill,
+.skills-list.circles .progress.p79 .fill,
+.skills-list.circles .progress.p80 .fill,
+.skills-list.circles .progress.p81 .fill,
+.skills-list.circles .progress.p82 .fill,
+.skills-list.circles .progress.p83 .fill,
+.skills-list.circles .progress.p84 .fill,
+.skills-list.circles .progress.p85 .fill,
+.skills-list.circles .progress.p86 .fill,
+.skills-list.circles .progress.p87 .fill,
+.skills-list.circles .progress.p88 .fill,
+.skills-list.circles .progress.p89 .fill,
+.skills-list.circles .progress.p90 .fill,
+.skills-list.circles .progress.p91 .fill,
+.skills-list.circles .progress.p92 .fill,
+.skills-list.circles .progress.p93 .fill,
+.skills-list.circles .progress.p94 .fill,
+.skills-list.circles .progress.p95 .fill,
+.skills-list.circles .progress.p96 .fill,
+.skills-list.circles .progress.p97 .fill,
+.skills-list.circles .progress.p98 .fill,
+.skills-list.circles .progress.p99 .fill,
+.skills-list.circles .progress.p100 .fill {
+    position: absolute;
+    width: 0.82em;
+    height: 0.82em;
+    clip: rect(0em, 0.5em, 1em, 0em);
+    /* border: 0.09em solid #78cc6d; */
+    /* border: 0.09em solid #e0485d; */
+    border: 0.09em solid #f48882;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.skills-list.circles .progress.p51 .bar:after,
+.skills-list.circles .progress.p51 .fill,
+.skills-list.circles .progress.p52 .bar:after,
+.skills-list.circles .progress.p52 .fill,
+.skills-list.circles .progress.p53 .bar:after,
+.skills-list.circles .progress.p53 .fill,
+.skills-list.circles .progress.p54 .bar:after,
+.skills-list.circles .progress.p54 .fill,
+.skills-list.circles .progress.p55 .bar:after,
+.skills-list.circles .progress.p55 .fill,
+.skills-list.circles .progress.p56 .bar:after,
+.skills-list.circles .progress.p56 .fill,
+.skills-list.circles .progress.p57 .bar:after,
+.skills-list.circles .progress.p57 .fill,
+.skills-list.circles .progress.p58 .bar:after,
+.skills-list.circles .progress.p58 .fill,
+.skills-list.circles .progress.p59 .bar:after,
+.skills-list.circles .progress.p59 .fill,
+.skills-list.circles .progress.p60 .bar:after,
+.skills-list.circles .progress.p60 .fill,
+.skills-list.circles .progress.p61 .bar:after,
+.skills-list.circles .progress.p61 .fill,
+.skills-list.circles .progress.p62 .bar:after,
+.skills-list.circles .progress.p62 .fill,
+.skills-list.circles .progress.p63 .bar:after,
+.skills-list.circles .progress.p63 .fill,
+.skills-list.circles .progress.p64 .bar:after,
+.skills-list.circles .progress.p64 .fill,
+.skills-list.circles .progress.p65 .bar:after,
+.skills-list.circles .progress.p65 .fill,
+.skills-list.circles .progress.p66 .bar:after,
+.skills-list.circles .progress.p66 .fill,
+.skills-list.circles .progress.p67 .bar:after,
+.skills-list.circles .progress.p67 .fill,
+.skills-list.circles .progress.p68 .bar:after,
+.skills-list.circles .progress.p68 .fill,
+.skills-list.circles .progress.p69 .bar:after,
+.skills-list.circles .progress.p69 .fill,
+.skills-list.circles .progress.p70 .bar:after,
+.skills-list.circles .progress.p70 .fill,
+.skills-list.circles .progress.p71 .bar:after,
+.skills-list.circles .progress.p71 .fill,
+.skills-list.circles .progress.p72 .bar:after,
+.skills-list.circles .progress.p72 .fill,
+.skills-list.circles .progress.p73 .bar:after,
+.skills-list.circles .progress.p73 .fill,
+.skills-list.circles .progress.p74 .bar:after,
+.skills-list.circles .progress.p74 .fill,
+.skills-list.circles .progress.p75 .bar:after,
+.skills-list.circles .progress.p75 .fill,
+.skills-list.circles .progress.p76 .bar:after,
+.skills-list.circles .progress.p76 .fill,
+.skills-list.circles .progress.p77 .bar:after,
+.skills-list.circles .progress.p77 .fill,
+.skills-list.circles .progress.p78 .bar:after,
+.skills-list.circles .progress.p78 .fill,
+.skills-list.circles .progress.p79 .bar:after,
+.skills-list.circles .progress.p79 .fill,
+.skills-list.circles .progress.p80 .bar:after,
+.skills-list.circles .progress.p80 .fill,
+.skills-list.circles .progress.p81 .bar:after,
+.skills-list.circles .progress.p81 .fill,
+.skills-list.circles .progress.p82 .bar:after,
+.skills-list.circles .progress.p82 .fill,
+.skills-list.circles .progress.p83 .bar:after,
+.skills-list.circles .progress.p83 .fill,
+.skills-list.circles .progress.p84 .bar:after,
+.skills-list.circles .progress.p84 .fill,
+.skills-list.circles .progress.p85 .bar:after,
+.skills-list.circles .progress.p85 .fill,
+.skills-list.circles .progress.p86 .bar:after,
+.skills-list.circles .progress.p86 .fill,
+.skills-list.circles .progress.p87 .bar:after,
+.skills-list.circles .progress.p87 .fill,
+.skills-list.circles .progress.p88 .bar:after,
+.skills-list.circles .progress.p88 .fill,
+.skills-list.circles .progress.p89 .bar:after,
+.skills-list.circles .progress.p89 .fill,
+.skills-list.circles .progress.p90 .bar:after,
+.skills-list.circles .progress.p90 .fill,
+.skills-list.circles .progress.p91 .bar:after,
+.skills-list.circles .progress.p91 .fill,
+.skills-list.circles .progress.p92 .bar:after,
+.skills-list.circles .progress.p92 .fill,
+.skills-list.circles .progress.p93 .bar:after,
+.skills-list.circles .progress.p93 .fill,
+.skills-list.circles .progress.p94 .bar:after,
+.skills-list.circles .progress.p94 .fill,
+.skills-list.circles .progress.p95 .bar:after,
+.skills-list.circles .progress.p95 .fill,
+.skills-list.circles .progress.p96 .bar:after,
+.skills-list.circles .progress.p96 .fill,
+.skills-list.circles .progress.p97 .bar:after,
+.skills-list.circles .progress.p97 .fill,
+.skills-list.circles .progress.p98 .bar:after,
+.skills-list.circles .progress.p98 .fill,
+.skills-list.circles .progress.p99 .bar:after,
+.skills-list.circles .progress.p99 .fill,
+.skills-list.circles .progress.p100 .bar:after,
+.skills-list.circles .progress.p100 .fill {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.skills-list.circles .progress {
+    margin: 0 auto;
+    position: relative;
+    font-size: 90px;
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    background: #eeeeee;
+}
+
+.skills-list.circles .progress *,
+.skills-list.circles .progress *:before,
+.skills-list.circles .progress *:after {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.skills-list.circles .progress span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 90px;
+    font-size: 17px;
+    color: #323232;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.skills-list.circles .progress:after {
+    position: absolute;
+    top: 0.09em;
+    left: 0.09em;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 0.82em;
+    height: 0.82em;
+}
+
+.skills-list.circles ul li .progress .percentage {
+    display: none;
+}
+
+.skills-list.circles .progress .slice {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, 1em, 1em, 0.5em);
+}
+
+.skills-list.circles .progress.p1 .bar {
+    -moz-transform: rotate(3.6deg);
+    -ms-transform: rotate(3.6deg);
+    -webkit-transform: rotate(3.6deg);
+    transform: rotate(3.6deg);
+}
+
+.skills-list.circles .progress.p2 .bar {
+    -moz-transform: rotate(7.2deg);
+    -ms-transform: rotate(7.2deg);
+    -webkit-transform: rotate(7.2deg);
+    transform: rotate(7.2deg);
+}
+
+.skills-list.circles .progress.p3 .bar {
+    -moz-transform: rotate(10.8deg);
+    -ms-transform: rotate(10.8deg);
+    -webkit-transform: rotate(10.8deg);
+    transform: rotate(10.8deg);
+}
+
+.skills-list.circles .progress.p4 .bar {
+    -moz-transform: rotate(14.4deg);
+    -ms-transform: rotate(14.4deg);
+    -webkit-transform: rotate(14.4deg);
+    transform: rotate(14.4deg);
+}
+
+.skills-list.circles .progress.p5 .bar {
+    -moz-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+}
+
+.skills-list.circles .progress.p6 .bar {
+    -moz-transform: rotate(21.6deg);
+    -ms-transform: rotate(21.6deg);
+    -webkit-transform: rotate(21.6deg);
+    transform: rotate(21.6deg);
+}
+
+.skills-list.circles .progress.p7 .bar {
+    -moz-transform: rotate(25.2deg);
+    -ms-transform: rotate(25.2deg);
+    -webkit-transform: rotate(25.2deg);
+    transform: rotate(25.2deg);
+}
+
+.skills-list.circles .progress.p8 .bar {
+    -moz-transform: rotate(28.8deg);
+    -ms-transform: rotate(28.8deg);
+    -webkit-transform: rotate(28.8deg);
+    transform: rotate(28.8deg);
+}
+
+.skills-list.circles .progress.p9 .bar {
+    -moz-transform: rotate(32.4deg);
+    -ms-transform: rotate(32.4deg);
+    -webkit-transform: rotate(32.4deg);
+    transform: rotate(32.4deg);
+}
+
+.skills-list.circles .progress.p10 .bar {
+    -moz-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+
+.skills-list.circles .progress.p11 .bar {
+    -moz-transform: rotate(39.6deg);
+    -ms-transform: rotate(39.6deg);
+    -webkit-transform: rotate(39.6deg);
+    transform: rotate(39.6deg);
+}
+
+.skills-list.circles .progress.p12 .bar {
+    -moz-transform: rotate(43.2deg);
+    -ms-transform: rotate(43.2deg);
+    -webkit-transform: rotate(43.2deg);
+    transform: rotate(43.2deg);
+}
+
+.skills-list.circles .progress.p13 .bar {
+    -moz-transform: rotate(46.8deg);
+    -ms-transform: rotate(46.8deg);
+    -webkit-transform: rotate(46.8deg);
+    transform: rotate(46.8deg);
+}
+
+.skills-list.circles .progress.p14 .bar {
+    -moz-transform: rotate(50.4deg);
+    -ms-transform: rotate(50.4deg);
+    -webkit-transform: rotate(50.4deg);
+    transform: rotate(50.4deg);
+}
+
+.skills-list.circles .progress.p15 .bar {
+    -moz-transform: rotate(54deg);
+    -ms-transform: rotate(54deg);
+    -webkit-transform: rotate(54deg);
+    transform: rotate(54deg);
+}
+
+.skills-list.circles .progress.p16 .bar {
+    -moz-transform: rotate(57.6deg);
+    -ms-transform: rotate(57.6deg);
+    -webkit-transform: rotate(57.6deg);
+    transform: rotate(57.6deg);
+}
+
+.skills-list.circles .progress.p17 .bar {
+    -moz-transform: rotate(61.2deg);
+    -ms-transform: rotate(61.2deg);
+    -webkit-transform: rotate(61.2deg);
+    transform: rotate(61.2deg);
+}
+
+.skills-list.circles .progress.p18 .bar {
+    -moz-transform: rotate(64.8deg);
+    -ms-transform: rotate(64.8deg);
+    -webkit-transform: rotate(64.8deg);
+    transform: rotate(64.8deg);
+}
+
+.skills-list.circles .progress.p19 .bar {
+    -moz-transform: rotate(68.4deg);
+    -ms-transform: rotate(68.4deg);
+    -webkit-transform: rotate(68.4deg);
+    transform: rotate(68.4deg);
+}
+
+.skills-list.circles .progress.p20 .bar {
+    -moz-transform: rotate(72deg);
+    -ms-transform: rotate(72deg);
+    -webkit-transform: rotate(72deg);
+    transform: rotate(72deg);
+}
+
+.skills-list.circles .progress.p21 .bar {
+    -moz-transform: rotate(75.6deg);
+    -ms-transform: rotate(75.6deg);
+    -webkit-transform: rotate(75.6deg);
+    transform: rotate(75.6deg);
+}
+
+.skills-list.circles .progress.p22 .bar {
+    -moz-transform: rotate(79.2deg);
+    -ms-transform: rotate(79.2deg);
+    -webkit-transform: rotate(79.2deg);
+    transform: rotate(79.2deg);
+}
+
+.skills-list.circles .progress.p23 .bar {
+    -moz-transform: rotate(82.8deg);
+    -ms-transform: rotate(82.8deg);
+    -webkit-transform: rotate(82.8deg);
+    transform: rotate(82.8deg);
+}
+
+.skills-list.circles .progress.p24 .bar {
+    -moz-transform: rotate(86.4deg);
+    -ms-transform: rotate(86.4deg);
+    -webkit-transform: rotate(86.4deg);
+    transform: rotate(86.4deg);
+}
+
+.skills-list.circles .progress.p25 .bar {
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.skills-list.circles .progress.p26 .bar {
+    -moz-transform: rotate(93.6deg);
+    -ms-transform: rotate(93.6deg);
+    -webkit-transform: rotate(93.6deg);
+    transform: rotate(93.6deg);
+}
+
+.skills-list.circles .progress.p27 .bar {
+    -moz-transform: rotate(97.2deg);
+    -ms-transform: rotate(97.2deg);
+    -webkit-transform: rotate(97.2deg);
+    transform: rotate(97.2deg);
+}
+
+.skills-list.circles .progress.p28 .bar {
+    -moz-transform: rotate(100.8deg);
+    -ms-transform: rotate(100.8deg);
+    -webkit-transform: rotate(100.8deg);
+    transform: rotate(100.8deg);
+}
+
+.skills-list.circles .progress.p29 .bar {
+    -moz-transform: rotate(104.4deg);
+    -ms-transform: rotate(104.4deg);
+    -webkit-transform: rotate(104.4deg);
+    transform: rotate(104.4deg);
+}
+
+.skills-list.circles .progress.p30 .bar {
+    -moz-transform: rotate(108deg);
+    -ms-transform: rotate(108deg);
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg);
+}
+
+.skills-list.circles .progress.p31 .bar {
+    -moz-transform: rotate(111.6deg);
+    -ms-transform: rotate(111.6deg);
+    -webkit-transform: rotate(111.6deg);
+    transform: rotate(111.6deg);
+}
+
+.skills-list.circles .progress.p32 .bar {
+    -moz-transform: rotate(115.2deg);
+    -ms-transform: rotate(115.2deg);
+    -webkit-transform: rotate(115.2deg);
+    transform: rotate(115.2deg);
+}
+
+.skills-list.circles .progress.p33 .bar {
+    -moz-transform: rotate(118.8deg);
+    -ms-transform: rotate(118.8deg);
+    -webkit-transform: rotate(118.8deg);
+    transform: rotate(118.8deg);
+}
+
+.skills-list.circles .progress.p34 .bar {
+    -moz-transform: rotate(122.4deg);
+    -ms-transform: rotate(122.4deg);
+    -webkit-transform: rotate(122.4deg);
+    transform: rotate(122.4deg);
+}
+
+.skills-list.circles .progress.p35 .bar {
+    -moz-transform: rotate(126deg);
+    -ms-transform: rotate(126deg);
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+}
+
+.skills-list.circles .progress.p36 .bar {
+    -moz-transform: rotate(129.6deg);
+    -ms-transform: rotate(129.6deg);
+    -webkit-transform: rotate(129.6deg);
+    transform: rotate(129.6deg);
+}
+
+.skills-list.circles .progress.p37 .bar {
+    -moz-transform: rotate(133.2deg);
+    -ms-transform: rotate(133.2deg);
+    -webkit-transform: rotate(133.2deg);
+    transform: rotate(133.2deg);
+}
+
+.skills-list.circles .progress.p38 .bar {
+    -moz-transform: rotate(136.8deg);
+    -ms-transform: rotate(136.8deg);
+    -webkit-transform: rotate(136.8deg);
+    transform: rotate(136.8deg);
+}
+
+.skills-list.circles .progress.p39 .bar {
+    -moz-transform: rotate(140.4deg);
+    -ms-transform: rotate(140.4deg);
+    -webkit-transform: rotate(140.4deg);
+    transform: rotate(140.4deg);
+}
+
+.skills-list.circles .progress.p40 .bar {
+    -moz-transform: rotate(144deg);
+    -ms-transform: rotate(144deg);
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+}
+
+.skills-list.circles .progress.p41 .bar {
+    -moz-transform: rotate(147.6deg);
+    -ms-transform: rotate(147.6deg);
+    -webkit-transform: rotate(147.6deg);
+    transform: rotate(147.6deg);
+}
+
+.skills-list.circles .progress.p42 .bar {
+    -moz-transform: rotate(151.2deg);
+    -ms-transform: rotate(151.2deg);
+    -webkit-transform: rotate(151.2deg);
+    transform: rotate(151.2deg);
+}
+
+.skills-list.circles .progress.p43 .bar {
+    -moz-transform: rotate(154.8deg);
+    -ms-transform: rotate(154.8deg);
+    -webkit-transform: rotate(154.8deg);
+    transform: rotate(154.8deg);
+}
+
+.skills-list.circles .progress.p44 .bar {
+    -moz-transform: rotate(158.4deg);
+    -ms-transform: rotate(158.4deg);
+    -webkit-transform: rotate(158.4deg);
+    transform: rotate(158.4deg);
+}
+
+.skills-list.circles .progress.p45 .bar {
+    -moz-transform: rotate(162deg);
+    -ms-transform: rotate(162deg);
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
+}
+
+.skills-list.circles .progress.p46 .bar {
+    -moz-transform: rotate(165.6deg);
+    -ms-transform: rotate(165.6deg);
+    -webkit-transform: rotate(165.6deg);
+    transform: rotate(165.6deg);
+}
+
+.skills-list.circles .progress.p47 .bar {
+    -moz-transform: rotate(169.2deg);
+    -ms-transform: rotate(169.2deg);
+    -webkit-transform: rotate(169.2deg);
+    transform: rotate(169.2deg);
+}
+
+.skills-list.circles .progress.p48 .bar {
+    -moz-transform: rotate(172.8deg);
+    -ms-transform: rotate(172.8deg);
+    -webkit-transform: rotate(172.8deg);
+    transform: rotate(172.8deg);
+}
+
+.skills-list.circles .progress.p49 .bar {
+    -moz-transform: rotate(176.4deg);
+    -ms-transform: rotate(176.4deg);
+    -webkit-transform: rotate(176.4deg);
+    transform: rotate(176.4deg);
+}
+
+.skills-list.circles .progress.p50 .bar {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.skills-list.circles .progress.p51 .bar {
+    -moz-transform: rotate(183.6deg);
+    -ms-transform: rotate(183.6deg);
+    -webkit-transform: rotate(183.6deg);
+    transform: rotate(183.6deg);
+}
+
+.skills-list.circles .progress.p52 .bar {
+    -moz-transform: rotate(187.2deg);
+    -ms-transform: rotate(187.2deg);
+    -webkit-transform: rotate(187.2deg);
+    transform: rotate(187.2deg);
+}
+
+.skills-list.circles .progress.p53 .bar {
+    -moz-transform: rotate(190.8deg);
+    -ms-transform: rotate(190.8deg);
+    -webkit-transform: rotate(190.8deg);
+    transform: rotate(190.8deg);
+}
+
+.skills-list.circles .progress.p54 .bar {
+    -moz-transform: rotate(194.4deg);
+    -ms-transform: rotate(194.4deg);
+    -webkit-transform: rotate(194.4deg);
+    transform: rotate(194.4deg);
+}
+
+.skills-list.circles .progress.p55 .bar {
+    -moz-transform: rotate(198deg);
+    -ms-transform: rotate(198deg);
+    -webkit-transform: rotate(198deg);
+    transform: rotate(198deg);
+}
+
+.skills-list.circles .progress.p56 .bar {
+    -moz-transform: rotate(201.6deg);
+    -ms-transform: rotate(201.6deg);
+    -webkit-transform: rotate(201.6deg);
+    transform: rotate(201.6deg);
+}
+
+.skills-list.circles .progress.p57 .bar {
+    -moz-transform: rotate(205.2deg);
+    -ms-transform: rotate(205.2deg);
+    -webkit-transform: rotate(205.2deg);
+    transform: rotate(205.2deg);
+}
+
+.skills-list.circles .progress.p58 .bar {
+    -moz-transform: rotate(208.8deg);
+    -ms-transform: rotate(208.8deg);
+    -webkit-transform: rotate(208.8deg);
+    transform: rotate(208.8deg);
+}
+
+.skills-list.circles .progress.p59 .bar {
+    -moz-transform: rotate(212.4deg);
+    -ms-transform: rotate(212.4deg);
+    -webkit-transform: rotate(212.4deg);
+    transform: rotate(212.4deg);
+}
+
+.skills-list.circles .progress.p60 .bar {
+    -moz-transform: rotate(216deg);
+    -ms-transform: rotate(216deg);
+    -webkit-transform: rotate(216deg);
+    transform: rotate(216deg);
+}
+
+.skills-list.circles .progress.p61 .bar {
+    -moz-transform: rotate(219.6deg);
+    -ms-transform: rotate(219.6deg);
+    -webkit-transform: rotate(219.6deg);
+    transform: rotate(219.6deg);
+}
+
+.skills-list.circles .progress.p62 .bar {
+    -moz-transform: rotate(223.2deg);
+    -ms-transform: rotate(223.2deg);
+    -webkit-transform: rotate(223.2deg);
+    transform: rotate(223.2deg);
+}
+
+.skills-list.circles .progress.p63 .bar {
+    -moz-transform: rotate(226.8deg);
+    -ms-transform: rotate(226.8deg);
+    -webkit-transform: rotate(226.8deg);
+    transform: rotate(226.8deg);
+}
+
+.skills-list.circles .progress.p64 .bar {
+    -moz-transform: rotate(230.4deg);
+    -ms-transform: rotate(230.4deg);
+    -webkit-transform: rotate(230.4deg);
+    transform: rotate(230.4deg);
+}
+
+.skills-list.circles .progress.p65 .bar {
+    -moz-transform: rotate(234deg);
+    -ms-transform: rotate(234deg);
+    -webkit-transform: rotate(234deg);
+    transform: rotate(234deg);
+}
+
+.skills-list.circles .progress.p66 .bar {
+    -moz-transform: rotate(237.6deg);
+    -ms-transform: rotate(237.6deg);
+    -webkit-transform: rotate(237.6deg);
+    transform: rotate(237.6deg);
+}
+
+.skills-list.circles .progress.p67 .bar {
+    -moz-transform: rotate(241.2deg);
+    -ms-transform: rotate(241.2deg);
+    -webkit-transform: rotate(241.2deg);
+    transform: rotate(241.2deg);
+}
+
+.skills-list.circles .progress.p68 .bar {
+    -moz-transform: rotate(244.8deg);
+    -ms-transform: rotate(244.8deg);
+    -webkit-transform: rotate(244.8deg);
+    transform: rotate(244.8deg);
+}
+
+.skills-list.circles .progress.p69 .bar {
+    -moz-transform: rotate(248.4deg);
+    -ms-transform: rotate(248.4deg);
+    -webkit-transform: rotate(248.4deg);
+    transform: rotate(248.4deg);
+}
+
+.skills-list.circles .progress.p70 .bar {
+    -moz-transform: rotate(252deg);
+    -ms-transform: rotate(252deg);
+    -webkit-transform: rotate(252deg);
+    transform: rotate(252deg);
+}
+
+.skills-list.circles .progress.p71 .bar {
+    -moz-transform: rotate(255.6deg);
+    -ms-transform: rotate(255.6deg);
+    -webkit-transform: rotate(255.6deg);
+    transform: rotate(255.6deg);
+}
+
+.skills-list.circles .progress.p72 .bar {
+    -moz-transform: rotate(259.2deg);
+    -ms-transform: rotate(259.2deg);
+    -webkit-transform: rotate(259.2deg);
+    transform: rotate(259.2deg);
+}
+
+.skills-list.circles .progress.p73 .bar {
+    -moz-transform: rotate(262.8deg);
+    -ms-transform: rotate(262.8deg);
+    -webkit-transform: rotate(262.8deg);
+    transform: rotate(262.8deg);
+}
+
+.skills-list.circles .progress.p74 .bar {
+    -moz-transform: rotate(266.4deg);
+    -ms-transform: rotate(266.4deg);
+    -webkit-transform: rotate(266.4deg);
+    transform: rotate(266.4deg);
+}
+
+.skills-list.circles .progress.p75 .bar {
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.skills-list.circles .progress.p76 .bar {
+    -moz-transform: rotate(273.6deg);
+    -ms-transform: rotate(273.6deg);
+    -webkit-transform: rotate(273.6deg);
+    transform: rotate(273.6deg);
+}
+
+.skills-list.circles .progress.p77 .bar {
+    -moz-transform: rotate(277.2deg);
+    -ms-transform: rotate(277.2deg);
+    -webkit-transform: rotate(277.2deg);
+    transform: rotate(277.2deg);
+}
+
+.skills-list.circles .progress.p78 .bar {
+    -moz-transform: rotate(280.8deg);
+    -ms-transform: rotate(280.8deg);
+    -webkit-transform: rotate(280.8deg);
+    transform: rotate(280.8deg);
+}
+
+.skills-list.circles .progress.p79 .bar {
+    -moz-transform: rotate(284.4deg);
+    -ms-transform: rotate(284.4deg);
+    -webkit-transform: rotate(284.4deg);
+    transform: rotate(284.4deg);
+}
+
+.skills-list.circles .progress.p80 .bar {
+    -moz-transform: rotate(288deg);
+    -ms-transform: rotate(288deg);
+    -webkit-transform: rotate(288deg);
+    transform: rotate(288deg);
+}
+
+.skills-list.circles .progress.p81 .bar {
+    -moz-transform: rotate(291.6deg);
+    -ms-transform: rotate(291.6deg);
+    -webkit-transform: rotate(291.6deg);
+    transform: rotate(291.6deg);
+}
+
+.skills-list.circles .progress.p82 .bar {
+    -moz-transform: rotate(295.2deg);
+    -ms-transform: rotate(295.2deg);
+    -webkit-transform: rotate(295.2deg);
+    transform: rotate(295.2deg);
+}
+
+.skills-list.circles .progress.p83 .bar {
+    -moz-transform: rotate(298.8deg);
+    -ms-transform: rotate(298.8deg);
+    -webkit-transform: rotate(298.8deg);
+    transform: rotate(298.8deg);
+}
+
+.skills-list.circles .progress.p84 .bar {
+    -moz-transform: rotate(302.4deg);
+    -ms-transform: rotate(302.4deg);
+    -webkit-transform: rotate(302.4deg);
+    transform: rotate(302.4deg);
+}
+
+.skills-list.circles .progress.p85 .bar {
+    -moz-transform: rotate(306deg);
+    -ms-transform: rotate(306deg);
+    -webkit-transform: rotate(306deg);
+    transform: rotate(306deg);
+}
+
+.skills-list.circles .progress.p86 .bar {
+    -moz-transform: rotate(309.6deg);
+    -ms-transform: rotate(309.6deg);
+    -webkit-transform: rotate(309.6deg);
+    transform: rotate(309.6deg);
+}
+
+.skills-list.circles .progress.p87 .bar {
+    -moz-transform: rotate(313.2deg);
+    -ms-transform: rotate(313.2deg);
+    -webkit-transform: rotate(313.2deg);
+    transform: rotate(313.2deg);
+}
+
+.skills-list.circles .progress.p88 .bar {
+    -moz-transform: rotate(316.8deg);
+    -ms-transform: rotate(316.8deg);
+    -webkit-transform: rotate(316.8deg);
+    transform: rotate(316.8deg);
+}
+
+.skills-list.circles .progress.p89 .bar {
+    -moz-transform: rotate(320.4deg);
+    -ms-transform: rotate(320.4deg);
+    -webkit-transform: rotate(320.4deg);
+    transform: rotate(320.4deg);
+}
+
+.skills-list.circles .progress.p90 .bar {
+    -moz-transform: rotate(324deg);
+    -ms-transform: rotate(324deg);
+    -webkit-transform: rotate(324deg);
+    transform: rotate(324deg);
+}
+
+.skills-list.circles .progress.p91 .bar {
+    -moz-transform: rotate(327.6deg);
+    -ms-transform: rotate(327.6deg);
+    -webkit-transform: rotate(327.6deg);
+    transform: rotate(327.6deg);
+}
+
+.skills-list.circles .progress.p92 .bar {
+    -moz-transform: rotate(331.2deg);
+    -ms-transform: rotate(331.2deg);
+    -webkit-transform: rotate(331.2deg);
+    transform: rotate(331.2deg);
+}
+
+.skills-list.circles .progress.p93 .bar {
+    -moz-transform: rotate(334.8deg);
+    -ms-transform: rotate(334.8deg);
+    -webkit-transform: rotate(334.8deg);
+    transform: rotate(334.8deg);
+}
+
+.skills-list.circles .progress.p94 .bar {
+    -moz-transform: rotate(338.4deg);
+    -ms-transform: rotate(338.4deg);
+    -webkit-transform: rotate(338.4deg);
+    transform: rotate(338.4deg);
+}
+
+.skills-list.circles .progress.p95 .bar {
+    -moz-transform: rotate(342deg);
+    -ms-transform: rotate(342deg);
+    -webkit-transform: rotate(342deg);
+    transform: rotate(342deg);
+}
+
+.skills-list.circles .progress.p96 .bar {
+    -moz-transform: rotate(345.6deg);
+    -ms-transform: rotate(345.6deg);
+    -webkit-transform: rotate(345.6deg);
+    transform: rotate(345.6deg);
+}
+
+.skills-list.circles .progress.p97 .bar {
+    -moz-transform: rotate(349.2deg);
+    -ms-transform: rotate(349.2deg);
+    -webkit-transform: rotate(349.2deg);
+    transform: rotate(349.2deg);
+}
+
+.skills-list.circles .progress.p98 .bar {
+    -moz-transform: rotate(352.8deg);
+    -ms-transform: rotate(352.8deg);
+    -webkit-transform: rotate(352.8deg);
+    transform: rotate(352.8deg);
+}
+
+.skills-list.circles .progress.p99 .bar {
+    -moz-transform: rotate(356.4deg);
+    -ms-transform: rotate(356.4deg);
+    -webkit-transform: rotate(356.4deg);
+    transform: rotate(356.4deg);
+}
+
+.skills-list.circles .progress.p100 .bar {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* dark css start */
+
+
+
+.header .top-menu ul li a,
+.header .menu-btn {
+    color: rgba(255, 255, 255, 0.85);
+    background: #31313a;
+}
+
+.header .menu-btn span,
+.header .menu-btn span:before,
+.header .menu-btn span:after {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.header .top-menu ul li a:before {
+    background: -moz-radial-gradient(right, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(right, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.header .top-menu ul li a .icon {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 1240px) {
+    .header .top-menu {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    }
+    .header .top-menu ul li a:before {
+        background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+        background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+        background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+}
+
+@media (max-width: 1240px) {
+    .header {
+        background: #31313a;
+    }
+}
+
+.card-started:after {
+    background: #31313a;
+    opacity: 0.3;
+}
+
+.card-started .profile {
+    background: #31313a;
+}
+
+.card-started .profile .slide:before,
+.card-started .profile .slide:after {
+    background: #31313a;
+}
+
+.card-started .profile .image img {
+    border-color: #31313a;
+    background-color: #31313a;
+}
+
+.card-started .profile .title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.card-started .profile .social a .ion,
+.card-started .profile .social a .fab,
+.card-started .profile .social a .fas {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.card-inner {
+    background: #31313a;
+}
+
+.card-inner:before,
+.card-inner:after {
+    background: #31313a;
+}
+
+.content .title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content .title:after {
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.info-list ul li strong {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.service-items.border-line-v:after {
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.service-items .service-item .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 560px) {
+    .service-items .col:after {
+        background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+        background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+        background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+}
+
+.pricing-items .pricing-item .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-items .pricing-item .amount .number {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-items .pricing-item .amount .dollar,
+.pricing-items .pricing-item .amount .period {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-items .pricing-item .amount .period {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.pricing-items .pricing-item .feature-list ul li {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-items .pricing-item .feature-list ul li strong {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.fuct-items .fuct-item .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.resume-title .icon,
+.skill-title .icon {
+    background: transparent;
+}
+
+.resume-title .name,
+.skill-title .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.resume-items .resume-item .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.skills-list ul li .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.skills-list ul li .progress {
+    background: #3e4148;
+}
+
+.skills-list.dotted ul li .progress .dg span {
+    background: #3e4148;
+}
+.skills-list.dotted ul li .progress .dg .lighted {
+    /* background:#e0485d; */
+    background:#f48882;
+}
+
+.skills-list.circles .progress {
+    background: #3e4148;
+}
+
+.skills-list.circles .progress span {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.skills-list.circles .progress:after {
+    background-color: #31313a;
+}
+
+.content.works .filter-menu .f_btn {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content.works .grid-items.border-line-v:after {
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.box-item .desc .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.mfp-wrap.popup-box-inline .mfp-close {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.mfp-wrap.popup-box-inline {
+    background: #31313a;
+}
+
+.post-box .blog-detail {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.post-box .blog-content blockquote {
+    color: rgba(255, 255, 255, 0.55);
+    border-left: none;
+}
+
+.post-box .blog-content ul.list-style li {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.post-box .post-comments li:before {
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.post-box .post-comments li .comment-info .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.post-box .post-comments li .comment-info .name a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.post-box .post-comments li .comment-info .name h6 span {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.background.gradient {
+    background: #17171b !important;
+    background: -webkit-linear-gradient(top left, #17171b 0%, #28282f 100%) !important;
+    background: linear-gradient(to bottom right, #17171b 0%, #28282f 100%) !important;
+}
+
+.bg-bubbles li {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.content .title .first-word {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content .title:first-letter {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.info-list ul li strong:after {
+    background: #31313a;
+}
+
+.content.blog .border-line-v:after {
+    background: -moz-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.post-comments .post-comment:before {
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.info-list ul li:before {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at center, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.pager .nav-links {
+    background: #3b3b42;
+}
+
+input,
+textarea,
+button,
+input[type="submit"] {
+    border-color: #666;
+}
+
+.content-sidebar {
+    background: #31313a;
+}
+
+.content-sidebar .close {
+    background: #3b3b42;
+}
+
+.content-sidebar .close:before,
+.content-sidebar .close:after {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.content-sidebar .widget ul li a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content-sidebar h2.widget-title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content-sidebar h2.widget-title .first-word {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content-sidebar h2.widget-title:first-letter {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.post-comments .title .title_inner:first-letter {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content .post-comments .title .first-word {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.search-form input.search-field {
+    border-color: #666;
+}
+
+.search-form input.search-submit {
+    filter: brightness(0) invert(1);
+}
+
+.content-sidebar .widget ul li {
+    border-color: #666;
+}
+
+.content-sidebar .widget ul li:last-child {
+    border-color: #666;
+}
+
+.resume-items .resume-item .date {
+    color: #666;
+    border-color: #666;
+}
+
+.post-comments .post-comment .desc span.comment-reply a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.post-comments .post-comment .desc span.comment-reply {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.navigation.post-navigation .nav-links a:hover {
+    color: #ddd;
+}
+
+.post-comments ul.children {
+    background: #3b3b42;
+}
+
+.preloader {
+    background: #3b3b42;
+}
+
+@media (max-width: 1240px) {
+    .blog-single .info-list ul li,
+    .content.contacts .info-list ul li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content.contacts .info-list ul,
+    .blog-single .info-list ul {
+        margin: -11px 0 0 0;
+    }
+    .blog-single .info-list ul {
+        margin: -11px 0 30px 0;
+    }
+}
+
+.content-sidebar .main-menu ul li a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.content-sidebar .main-menu ul li:after,
+.content-sidebar .main-menu ul li:first-child::before {
+    background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.button {
+    padding: 0;
+    background: transparent;
+}
+
+.button .text {
+    padding-left: 0;
+}
+
+.profile .main-menu-fixed:before {
+    background: #31313a;
+}
+
+.profile .main-menu ul li a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.profile .main-menu .menu-main-menu-container ul li a:hover,
+.profile .main-menu .menu-main-menu-container ul li a:hover .icon {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.header .profile .title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+input[type="submit"] {
+    border-color: #44454c;
+    background: #44454c;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    border-color: #4b4c54;
+    background: #4b4c54;
+}
+
+@media (max-width: 680px) {
+    .header .top-menu:before {
+        background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+        background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+        background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    .header .top-menu ul.menu {
+        background: #31313a;
+    }
+}
+
+.revs-item .text {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.revs-item .text:before,
+.revs-item .text:after {
+    /* background: url(../images/quote_d.svg) no-repeat; */
+    background-size: contain;
+}
+
+.revs-item .info .name {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.revs-item .info .company {
+    color: #666;
+}
+
+
+
+/* dark css end */
+
+
+.flex__it {
+  display: flex;
+  align-items: center;
+}
+
+.flex__it svg {
+  font-size: 18px;
+  color: #e0485d;
+  /* color: #f48882; */
+}
+
+.custom__img-box {
+    min-height: 250px;
+}
