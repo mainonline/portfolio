@@ -2809,7 +2809,3 @@ input[type="submit"]:hover {
   color: #e0485d;
   /* color: #f48882; */
 }
-
-.custom__img-box {
-    min-height: 250px;
-}
