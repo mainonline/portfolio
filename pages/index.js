@@ -34,7 +34,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m front-end developer based in Kyrgyzstan!
+        Hello, I&apos;m a front-end developer based in Kyrgyzstan!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -65,7 +65,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
           Joomart is a front-end web developer based in Bishkek. He has rich experience in website design and building and customization, also he is good at CMS technologies. He is building projects which solve real-life problems.
