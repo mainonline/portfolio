@@ -42,7 +42,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Joomart
           </Heading>
-          <p>Digital Hunter ( Developer / Designer / Rider )</p>
+          <p>Digital Hunter ( Developer / Designer)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -68,10 +68,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Joomart is a freelance and front-end web developer based in Bishkek.
-          He has rich experience in web site design and building and customization,
-          also he is good at CMS technologies. He is building projects which solves real-live
-          problems.
+          Joomart is a front-end web developer based in Bishkek. He has rich experience in website design and building and customization, also he is good at CMS technologies. He is building projects which solve real-life problems.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/skills">
@@ -96,7 +93,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          Graduated from New Generation Academy (preparatory program which provides scholarships for 25 citizens of the republic)
+          Graduated from New Generation Academy (a preparatory program that provides scholarships for 25 citizens of the republic)
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
@@ -172,8 +169,7 @@ const Home = () => (
             Work
           </Heading>
           <Paragraph>
-            Front-end developer based in Bishkek, with a dream to build a product that will be used by million users.
-
+            Front-end developer based in Bishkek, with a dream to build a product that will be used by millions of users.
           </Paragraph>
         </Section>
 
