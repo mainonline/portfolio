@@ -19,7 +19,8 @@ import Section from '../components/section'
 import {
   IoLogoFacebook,
   IoLogoGithub,
-  IoPaperPlane
+  IoPaperPlane,
+  IoArrowDownOutline
 }
   from 'react-icons/io5'
 
@@ -43,6 +44,15 @@ const Home = () => (
             Joomart
           </Heading>
           <p>Digital Hunter ( Developer / Designer)</p>
+          <Link href="https://akimov.vercel.app/images/resume.pdf">
+            <Button
+                variant="primary"
+                colorScheme="dark"
+                leftIcon={<Icon as={IoArrowDownOutline} />}
+            >
+              resume
+            </Button>
+          </Link>
         </Box>
         <Box
           flexShrink={0}

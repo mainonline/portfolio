@@ -21,7 +21,7 @@ const Posts = () => (
             </div>
             <div className="resume-items">
               <div className="resume-item border-line-h active">
-                <div className="date">2021 - Present</div>
+                <div className="date">2020, May - 2021, Apr</div>
                 <Heading as="h5" variant="section-titleh5">
                   Front-End Developer
                 </Heading>
@@ -31,13 +31,13 @@ const Posts = () => (
                 </p>
               </div>
               <div className="resume-item border-line-h">
-                <div className="date">2020 - 2021</div>
+                <div className="date">2021, Apr - 2022, October</div>
                 <Heading as="h5" variant="section-titleh5">
-                  Fron-End Mentor
+                  FullStack developer
                 </Heading>
-                <div className="company">Skilland School</div>
+                <div className="company">Elixir Studios</div>
                 <p>
-                  Еaught programming courses for beginners
+                  Web app development
                 </p>
               </div>
               <div className="resume-item">
@@ -47,7 +47,7 @@ const Posts = () => (
                 </Heading>
                 <div className="company">It Academy Bishkek</div>
                 <p>
-                  Menot assistant in web programming courses
+                  Mentor assistant in web programming courses
                 </p>
               </div>
             </div>
